@@ -126,3 +126,4 @@ resource "aws_subnet" "private_st3" {
     Name = "Private Subnet 3"
   }
 }
+
