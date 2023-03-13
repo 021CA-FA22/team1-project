@@ -93,5 +93,5 @@ resource "aws_instance" "jenkins" {
   associate_public_ip_address = true
   security_groups             = [aws_security_group.jenkins_sg.id]
   key_name                    = "jenkins-key"
-  user_data                   = file("userdata")
+  user_data                   = file("userdataaaa")
 }
