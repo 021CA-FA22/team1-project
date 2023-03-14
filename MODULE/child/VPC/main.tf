@@ -7,7 +7,7 @@ resource "aws_vpc" "my_vpc" {
   }
 }
 
-####### DATA SOURCE FOR AVAILABILITY ###########
+####### DATA SOURCE FOR AVAILABILITY ZONES ###########
 data "aws_availability_zone" "first_availability_zone" {
   name = "us-east-1a"
 }
