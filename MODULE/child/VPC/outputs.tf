@@ -18,14 +18,14 @@ output "public_subneet_cidr" {
   value = aws_subnet.public_subneet.id
 }
 
-output "private_subnet_cidr_first" {
-  value = aws_subnet.private_subnet_first.id
+output "private_subneet_cidr_1" {
+  value = aws_subnet.private_subneet_1.id
 }
 
-output "private_subnet_cidr_second" {
-  value = aws_subnet.private_subnet_second.id
+output "private_subneet_cidr_2" {
+  value = aws_subnet.private_subneet_2.id
 }
 
-output "private_subnet_cidr_third" {
-  value = aws_subnet.private_subnet_third.id
+output "private_subneet_cidr_3" {
+  value = aws_subnet.private_subneet_3.id
 }

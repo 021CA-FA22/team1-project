@@ -72,9 +72,9 @@ resource "aws_subnet" "public_subneet" {
 }
 
 ## Private Subnet 1
-resource "aws_subnet" "private_subnet_first" {
+resource "aws_subnet" "private_subneet_1" {
   vpc_id                  = aws_vpc.my_vpc.id
-  cidr_block              = var.private_subnet_cidr_first
+  cidr_block              = var.private_subneet_cidr_1
   availability_zone       = data.aws_availability_zone.second_availability_zone.id
   map_public_ip_on_launch = false
   tags = {
@@ -83,9 +83,9 @@ resource "aws_subnet" "private_subnet_first" {
 }
 
 ## Private Subnet 2
-resource "aws_subnet" "private_subnet_second" {
+resource "aws_subnet" "private_subneet_2" {
   vpc_id                  = aws_vpc.my_vpc.id
-  cidr_block              = var.private_subnet_cidr_second
+  cidr_block              = var.private_subneet_cidr_2
   availability_zone       = data.aws_availability_zone.second_availability_zone.id
   map_public_ip_on_launch = false
   tags = {
@@ -94,9 +94,9 @@ resource "aws_subnet" "private_subnet_second" {
 }
 
 ## Private subnet 3
-resource "aws_subnet" "private_subnet_third" {
+resource "aws_subnet" "private_subneet_3" {
   vpc_id                  = aws_vpc.my_vpc.id
-  cidr_block              = var.private_subnet_cidr_third
+  cidr_block              = var.private_subneet_cidr_3
   availability_zone       = data.aws_availability_zone.second_availability_zone.id
   map_public_ip_on_launch = false
   tags = {
